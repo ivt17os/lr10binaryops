@@ -1,10 +1,10 @@
-	#include <stdio.h>
+//Оконешникова
+#include <stdio.h>
 
-	int main(){
+int main(){
+	int x = 31;
 
-		int x = 31;
-	
-		printf("%d\n", x<<1);
+	printf("%d\n", x<<1);
 
-		return 0;
-	}
+	return 0;
+}
