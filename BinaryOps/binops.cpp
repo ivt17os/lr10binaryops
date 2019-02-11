@@ -1,12 +1,13 @@
-	// Kilroy was here
+// Kilroy was here
 
-	#include <stdio.h>
+#include <stdio.h>
 
-	int main(){
+int main() {
 
-		int x = 31;
-	
-		printf("%d\n", x<<1);
+	int x = 31;
 
-		return 0;
-	}
+	while (x <<= 1)
+		printf("%d\n", x);
+
+	return 0;
+}
