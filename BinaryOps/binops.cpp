@@ -7,7 +7,12 @@
 
 		int x = 31;
 
-		printf("%d\n", x<<1);
+		for( int i=1; i<=32; i++){
+
+			x = x << 1;
+
+		printf("%d\n", x);
+		}
 
 		return 0;
 	}
