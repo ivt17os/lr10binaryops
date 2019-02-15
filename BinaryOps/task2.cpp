@@ -10,13 +10,13 @@ int main() {
     HANDLE hFind;                   	// номер поиска
     WIN32_FIND_DATA res;            	// результат поиска
  
-    hFind = FindFirstFile(L"C:\\Users\\student\\*", &res);   // найти первый файл
+    hFind = FindFirstFile(L"C:\\Users\\student.b12\\*", &res);   // найти первый файл
  
     do {
         if ((res.dwFileAttributes & FILE_ATTRIBUTE_DIRECTORY) != 0 &&
 			_tcscmp(res.cFileName, TEXT("..")) != 0 &&
 			_tcscmp(res.cFileName, TEXT(".")) != 0) { // если это подпапка
-				_tprintf("%s\n"TEXT(res.cFileName));
+				_tprintf(TEXT("%s\n"),res.cFileName);
         }
     } while (FindNextFile(hFind, &res) != 0);
     FindClose(hFind);
