@@ -2,7 +2,7 @@
 
 #include <stdio.h>
 
-	int main(){
+	int main1(){
 
 		int i = 0, x = 31;
 

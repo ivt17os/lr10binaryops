@@ -15,8 +15,11 @@ int main() {
     do {
         if ((res.dwFileAttributes & FILE_ATTRIBUTE_DIRECTORY) != 0 &&
 			_tcscmp(res.cFileName, TEXT("..")) != 0 &&
-			_tcscmp(res.cFileName, TEXT(".")) != 0) { // если это подпапка
-				_tprintf("%s\n"TEXT(res.cFileName));
+			_tcscmp(res.cFileName, TEXT(".")) != 0 &&
+			(res.dwFileAttributes & FILE_ATTRIBUTE_HIDDEN) 
+			)
+		{ // если это подпапка
+				_tprintf(TEXT("%s\n"),(res.cFileName));
         }
     } while (FindNextFile(hFind, &res) != 0);
     FindClose(hFind);
