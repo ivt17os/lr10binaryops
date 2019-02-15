@@ -1,16 +1,10 @@
-//KIRILLG
+	#include <stdio.h>
 
-#include <stdio.h>
+	int main1(){
 
-	int main(){
-
-		int i = 0, x = 31;
+		int x = 31;
 	
-		for (i = 0; i < 100; i++){
-			x = x<<1;
-			printf("%d\n", x<<1); 
+		printf("%d\n", x<<1);
+
 		return 0;
 	}
-}
-
-	// Сдвиг не является циклическим 
