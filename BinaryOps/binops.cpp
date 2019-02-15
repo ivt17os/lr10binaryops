@@ -1,4 +1,6 @@
-	#include <stdio.h>
+//Kychkin
+
+#include <stdio.h>
 
 	int main(){
 
