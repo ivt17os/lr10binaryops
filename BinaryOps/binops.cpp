@@ -1,4 +1,6 @@
-	#include <stdio.h>
+// оюбкнб
+
+#include <stdio.h>
 
 	int main(){
 
