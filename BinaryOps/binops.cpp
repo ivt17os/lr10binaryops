@@ -1,4 +1,4 @@
-//KIRILL GERASIMOW
+//KIRILLG
 
 #include <stdio.h>
 
