@@ -2,7 +2,7 @@
 #include <iostream>
 using namespace std;
 	//Veremeenko
-	int main(){
+	int main1(){
 
 		int x = 31;
 	
