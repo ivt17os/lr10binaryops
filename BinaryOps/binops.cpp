@@ -2,7 +2,7 @@
 
 	// Tudupov
 
-	int main(){
+	int main1(){
 
 		int x = 31,i;
 	
