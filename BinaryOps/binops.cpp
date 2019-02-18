@@ -3,7 +3,7 @@
 
 ///123, ûûûû
 
-	int main(){
+	int main1(){
 
 		int x = 31;
 
