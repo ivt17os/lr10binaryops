@@ -1,6 +1,6 @@
 	#include <stdio.h>
 // LVOV
-	int main(){
+	int main1(){
 
 		int x = 31;
 		for(int i = 1; i <= 32; i++){

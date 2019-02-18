@@ -1,0 +1,35 @@
+[33mcommit 692eee1dcb088a1c3b0b957987e18309c63bf40b[m[33m ([m[1;36mHEAD -> [m[1;32mLvov[m[33m, [m[1;31morigin/Lvov[m[33m)[m
+Author: LVOV <xaata3007@mail.ru>
+Date:   Mon Feb 11 09:26:08 2019 +0900
+
+    task 1 done
+
+[33mcommit b6d3ae652638dbd38486427e99ec07adaeab3615[m[33m ([m[1;32mmaster[m[33m)[m
+Author: Aleksandr Pavlov <avi.pavlovi@s-vfui.ru>
+Date:   Mon Feb 11 08:50:49 2019 +0900
+
+    save proj
+
+[33mcommit deb9766564ef792845e602e51f6b87211f6e1dff[m
+Author: Aleksandr Pavlov <avi.pavlovi@s-vfui.ru>
+Date:   Mon Feb 11 08:45:54 2019 +0900
+
+    rename ConsoleApplication23 -> BinOps
+
+[33mcommit ed086bb922bee214c2502c09d92a1a4ac8a6c705[m
+Author: Aleksandr Pavlov <avi.pavlovi@s-vfui.ru>
+Date:   Mon Feb 11 08:40:08 2019 +0900
+
+    init
+
+[33mcommit 453b1c5d667ddef641023ea48225d04994be5d12[m
+Author: Aleksandr Pavlov <7911562+av-pavlov@users.noreply.github.com>
+Date:   Mon Feb 11 08:32:19 2019 +0900
+
+    Create README.md
+
+[33mcommit 6cb012182665f7c6f53f95cd06d6e89696ac94fc[m
+Author: Aleksandr Pavlov <7911562+av-pavlov@users.noreply.github.com>
+Date:   Mon Feb 11 08:28:25 2019 +0900
+
+    Initial commit
