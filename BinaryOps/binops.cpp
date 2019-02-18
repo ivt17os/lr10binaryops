@@ -4,7 +4,7 @@
 //.......
 
 
-int main(){
+int main1(){
 
 	int x = 31;
 	for (int i = 0; i < 33; i++) 
