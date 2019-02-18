@@ -1,7 +1,7 @@
 //Оконешникова
 #include <stdio.h>
 
-int main(){
+int main1(){
 	int x = 31;
 	for (int i=0;i<=32;i++){
 	x=x<<1;
