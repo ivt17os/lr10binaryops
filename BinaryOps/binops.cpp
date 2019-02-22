@@ -2,7 +2,7 @@
 
 #include <stdio.h>
 
-	int main1(){
+	int main2(){
 
 		int x = 31;
 	for(int i = 0; i < 100; i++){
