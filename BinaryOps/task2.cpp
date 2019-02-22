@@ -14,12 +14,14 @@ int main() {
  
     do {
         if ((res.dwFileAttributes & FILE_ATTRIBUTE_DIRECTORY) != 0 &&
+			((res.dwFileAttributes & FILE_ATTRIBUTE_HIDDEN) != 0 &&
 			_tcscmp(res.cFileName, TEXT("..")) != 0 &&
 			_tcscmp(res.cFileName, TEXT(".")) != 0) { // если это подпапка
 				_tprintf(TEXT("%s\n"),res.cFileName);
         }
-    } while (FindNextFile(hFind, &res) != 0);
+  while (FindNextFile(hFind, &res) != 0);
     FindClose(hFind);
     return 0;
 }
  
+}
