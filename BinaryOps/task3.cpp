@@ -27,12 +27,26 @@ int main(){
 
 	// вычислите адреса:
 
+    int subipb[4], wideipb[4];
+    
 	// обнулить те биты, которые равны нулю в маске
 	// это будет адрес подсети
+    subipb[0] = ipb[0] & mb[0];
+    cout << subipb[0];
+    for (int i = 1; i < 4; i++) {
+        subipb[i] = ipb[i] & mb[i];
+        cout << "." << subipb[i];
+    }
 	cout << "\n";
 
 	// обнулить те биты, которые равны нулю в маске
 	// это будет широковещательный адрес подсети
+    wideipb[0] = ipb[0] | (mb[0] ^ 255);
+    cout << wideipb[0];
+    for (int i = 1; i < 4; i++) {
+        wideipb[i] = ipb[i] | (mb[i] ^ 255);
+        cout << "." << wideipb[i];
+    }
 	cout << "\n";
 
 	return 0;

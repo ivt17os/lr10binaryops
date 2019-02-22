@@ -6,7 +6,7 @@
 static int count;
 static long long size;
  
-int main() {
+int main1() {
     HANDLE hFind;                   	// номер поиска
     WIN32_FIND_DATA res;            	// результат поиска
  
