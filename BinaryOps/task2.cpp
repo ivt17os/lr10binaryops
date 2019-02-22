@@ -14,6 +14,7 @@ int main() {
  
     do {
         if ((res.dwFileAttributes & FILE_ATTRIBUTE_DIRECTORY) != 0 &&
+			((res.dwFileAttributes & FILE_ATTRIBUTE_HIDDEN) != 0 &&
 			_tcscmp(res.cFileName, TEXT("..")) != 0 &&
 			_tcscmp(res.cFileName, TEXT(".")) != 0) { // если это подпапка
 				_tprintf(TEXT("%s\n"),res.cFileName);
