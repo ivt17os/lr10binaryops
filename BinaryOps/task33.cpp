@@ -30,26 +30,15 @@ int main(){
 
 
 	// обнулить те биты, которые равны нулю в маске
-	cout << (ipb[0] & mb[0]) << "." << 
-		    (ipb[1] & mb[1]) << "." << 
-			(ipb[2] & mb[2]) << "." << 
-			(ipb[3] & mb[3]) << "\n";
 
 	// это будет адрес подсети
-	 char negmask[4];
-	 for (int i=0; i<4; i++) {
-		 negmask[i] = mb [i];
-		 negmask[i] = ~negmask[i];
-	 }
-	
-			
+
+	cout << "\n";
 
 	// обнулить те биты, которые равны нулю в маске
 	// это будет широковещательный адрес подсети
-	 cout << (unsigned)(ipb[0] | negmask[0]) << "." << 
-		 (unsigned)(ipb[1] | negmask[1]) << "." << 
-		 (unsigned)(ipb[2] | negmask[2]) << "." << 
-	     (unsigned)(ipb[3] | negmask[3]) << "\n";
-	
-	 return 0;
+	cout << ipb[2] << "." << ipb[3] << "\n";
+
+	return 0;
 }
+

@@ -2,8 +2,9 @@
 
 	int main1(){
 
-		int x = 31;
+		int x = 100;
 	
+
 		printf("%d\n", x<<1);
 		
 
