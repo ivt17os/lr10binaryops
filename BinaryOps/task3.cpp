@@ -17,6 +17,7 @@ int main(){
 	int ipb[4],mb[4]; 
 	char ch; //to temporarily store the '.'
 
+	char negmask[4];
 	// получить числа из строк
 	
 	std::stringstream ssip(ip);
@@ -27,12 +28,30 @@ int main(){
 
 	// вычислите адреса:
 
+
+
 	// обнулить те биты, которые равны нулю в маске
 	// это будет адрес подсети
-	cout << "\n";
+	cout << (ipb[0] & mb[0]) << "." 
+		 << (ipb[1] & mb[1]) << "."
+		 << (ipb[2] & mb[2]) << "."
+		 << (ipb[3] & mb[3]) << "\n";
 
 	// обнулить те биты, которые равны нулю в маске
 	// это будет широковещательный адрес подсети
+
+	char negmask[4];
+	for (int i = 0; i < 4; i++){
+		negmask[i] = mb[i];
+		negmask[i] = ~negmask[i];
+	}
+
+	cout << (unsigned) (ipb[0] | mb[0]) << "." 
+		 << (unsigned) (ipb[1] | mb[1]) << "."
+		 << (unsigned) (ipb[2] | mb[2]) << "."
+		 << (unsigned) (ipb[3] | mb[3]) << "\n";
+
+
 	cout << "\n";
 
 	return 0;
