@@ -6,7 +6,7 @@
 static int count;
 static long long size;
  
-int main() {
+int main2() {
     HANDLE hFind;                   	// номер поиска
     WIN32_FIND_DATA res;            	// результат поиска
  
@@ -14,9 +14,9 @@ int main() {
  
     do {
         if ((res.dwFileAttributes & FILE_ATTRIBUTE_DIRECTORY) != 0 && (res.dwFileAttributes & FILE_ATTRIBUTE_HIDDEN) != 0) //&&
-			//_tcscmp(res.cFileName, TEXT("..")) != 0) //&&
+			//_tcscmp(res.cFileName, TEXT("..")) != 0 &&
 			//_tcscmp(res.cFileName, TEXT(".")) != 0) 
-		{ // если это подпапка
+		{  //если это подпапка
 				_tprintf(TEXT("%s\n"), res.cFileName);
         }
     } while (FindNextFile(hFind, &res) != 0);
