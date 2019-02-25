@@ -14,7 +14,7 @@ int main(){
 	cin >> mask;
 
 
-	int ipb[4],mb[4]; 
+	int ipb[4],mb[4],res1[4],res2[4]; 
 	char ch; //to temporarily store the '.'
 
 	// получить числа из строк
@@ -26,6 +26,10 @@ int main(){
 	ssmask >> mb[0] >> ch >> mb[1] >> ch >> mb[2] >> ch >> mb[3];
 
 	// вычислите адреса:
+	for (int i=0; i<4; i++){
+		res1[i]=ipb[i]&mb[i];
+		cout << res1[i] << ".";
+	}
 
 	// обнулить те биты, которые равны нулю в маске
 	// это будет адрес подсети
@@ -35,5 +39,6 @@ int main(){
 	// это будет широковещательный адрес подсети
 	cout << "\n";
 
+	system("pause");
 	return 0;
 }
